@@ -1,0 +1,102 @@
+{
+  "selectedTemplate": 4,
+  "headings": {
+    "education": "",
+    "skills": "",
+    "projects": "",
+    "awards": "",
+    "work": "Experience"
+  },
+  "basics": {
+    "name": "Saswata Dutta",
+    "email": "saswat.dutta@gmail.com",
+    "phone": "8178349520",
+    "location": {
+      "address": "Gurugram"
+    },
+    "website": "github.com/saswata-dutta"
+  },
+  "education": [
+    {
+      "location": "Guwahati",
+      "endDate": "2013",
+      "institution": "IIT Guwahati",
+      "studyType": "M.Tech.",
+      "area": "Computer Science and Engineering",
+      "gpa": "8.92",
+      "startDate": "2011"
+    }
+  ],
+  "work": [
+    {
+      "highlights": [
+        null
+      ],
+      "company": "Rivigo Services Pvt. Ltd.",
+      "position": "Lead Engineer",
+      "location": "Gurugram",
+      "startDate": "2018",
+      "endDate": "Present"
+    },
+    {
+      "position": "Computer Scientist",
+      "website": "",
+      "endDate": "2018",
+      "highlights": [
+        "Feature development and performance optimisation in multiple releases of AEM Forms.",
+        "Automatic Paper Form Capture:  Lead project from inception. Created pipelines for gathering datasets, defined protocol for communication between different knowledge sources, heuristically extract structure and semantics from “ﬂat documents”, created framework for measuring KPIs, implemented the merge and presentations engine which generated the final “Adaptive Form”. (Scala, C++, Java, JavaScript, Python)",
+        "HTML5 and Adaptive forms:   Optimised browser footprint to allow large forms to be efficiently loaded.  Built a framework for auto importing xfa-pdf controls as html widgets. Worked on layout and formatting of elements in both html and pdf rendition. Worked on backend management, formatting and validation of user data, and generation of xml/json output for persistent storage. (Scala, Java, Apache Sling/OSGI based architecture, JavaScript, C++)"
+      ],
+      "company": "Adobe India Pvt. Ltd.",
+      "location": "Bangaluru",
+      "startDate": "2013"
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "level": "",
+      "keywords": [
+        null
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spark-Seed",
+      "description": "Spark based framework to ingest data from any source, and flush to any sink. Aim of project is to allow easy configuration of common ingestions and ETL with just “conf” files.",
+      "url": "github.com/saswata-dutta/spark-seed",
+      "keywords": [
+        "Scala",
+        "Apache Spark"
+      ]
+    },
+    {
+      "keywords": [
+        "Python",
+        "PySpark",
+        "Pandas"
+      ],
+      "name": "aws-feature-store",
+      "url": "github.com/saswata-dutta/aws-feature-store",
+      "description": "Implementation of a simple AWS backed feature-store using AWS S3 for storage, Glue for data catalog, and Athena as SQL engine. Supports schema evolution. Allows operations using both PySpark and Pandas. Motivation was the lack of cost effective tooling for small to medium scale data processing using AWS Glue and Athena."
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "projects",
+    "education",
+    "skills",
+    "awards"
+  ]
+}
