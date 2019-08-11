@@ -47,7 +47,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \documentclass[]{deedy-resume-openfont}
-
+    \newfontfamily\libertinesystemfont{Linux Libertine O}
     \begin{document}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,22 +64,31 @@
 \section{Experience}
 \runsubsection{Rivigo Services Pvt. Ltd.}\descript{| Lead Engineer}\hfill \location{Gurugram | Jun 2018 – Present}
 \begin{tightemize}
-	\item Created platform for ingesting/querying relevant data in/out of our Data Lake. (Scala, Spark, Airflow, Python, Pandas, PySpark, AWS : Lambda, S3, Glue, Athena)
+	\item Created platform for ingesting/querying relevant data in/out of our Data Lake.\newline
+    (
+        {\libertinesystemfont {\textbf Scala, Spark, Airflow, Python, Pandas, PySpark, AWS : Lambda, S3, Glue, Athena}}
+    )
 	\item Implemented “Vaayu”, a Spark based framework to process and store data from various sources.
 	\item Implemented “Tejas”, a serverless feature store for sharing and reuse of features needed by ML models.
-	\item Refactored “Payments/Commerce” services into separate micro-services corresponding to Payments (pay-in, pay-out), Wallet, Incentives, Fuel, and Fastag. (Java, Scala, Spring, Hibernate, MySql).
+	\item Refactored “Payments/Commerce” services into separate micro-services corresponding to Payments (pay-in, pay-out), Wallet, Incentives, Fuel, and Fastag.\newline
+    (
+        {\libertinesystemfont {\textbf Java, Scala, Spring, Hibernate, MySql}}
+    )
 	\item Implemented realtime pay-out to suppliers via IMPS/NEFT from company accounts in ICICI, Yes bank and Axis Bank. Automated retries and refunds. Bank and payment mode selection based on the transaction details and recent success rate of the bank. Float maintenance within the company accounts.
 	\item Wallet for demand and supply users which reflected the payments and incentives in realtime. This was linked with other services like bank accounts, Fuel vouchers and Fastag topups.
 	\item Integration with all major vendors : IOCL, HPCL, Reliance, BPCL, to generate fuel vouchers.
 	\item Rule based Incentive engine to distribute coupons to users in realtime. Rules for eligibility, and triggering of benefits were embedded in the coupon DSL which could be input by business analysts.
 	\item KYC service by performing penny drop on beneficiary account to verify name and account details.
 	\item Implemented framework for integration and stress testing of entire payment/commerce ecosystem.
-	\item Implemented queryable application log repository in Aws Glue/Athena, for ELK cost savings.
+	\item Implemented queryable application log repository in AWS Glue/Athena, for ELK cost savings.
 \end{tightemize}
 \sectionsep
 \runsubsection{Adobe India Pvt. Ltd.}\descript{| Computer Scientist}\hfill \location{Noida/Bangaluru | 2013 – 2018}
 \begin{tightemize}
-	\item Feature development and performance optimisation in multiple releases of AEM Forms. (Scala, C++, Java, JavaScript, Python, Apache Sling/OSGI)
+	\item Feature development and performance optimisation in multiple releases of AEM Forms.\newline
+    (
+        {\libertinesystemfont {\textbf Scala, C++, Java, JavaScript, Python, Apache Sling/OSGI}}
+    )
 	\item Automatic Paper Form Capture: Lead project from inception. Created pipelines for gathering datasets, defined protocol for communication between different knowledge sources, heuristically extract structure and semantics from “ﬂat documents”, created framework for measuring KPIs, implemented the merge and presentations engine which generated the final “Adaptive Form”.
 	\item HTML5 and Adaptive forms: Optimised browser footprint to allow large forms to be efficiently loaded. Built a framework for auto importing xfa-pdf controls as html widgets. Worked on layout and formatting of elements in both html and pdf rendition. Worked on backend management, formatting and validation of user data, and generation of xml/json output for persistent storage.
 \end{tightemize}
@@ -106,7 +115,7 @@ GPA: 8.92\\
 
 \runsubsection{\large{Spark-Seed}}
 \descript{| Scala, Apache Spark}\hfill \location{github.com/saswata-dutta/spark-seed}\\
-Spark based framework to ingest data from any source, and flush to any sink. Aim of project is to allow easy configuration of simple ingestion and ETL with just “conf” files.\\
+Spark based framework to ingest data from any source, and flush to any sink. Aim of project is to allow easy configuration of simple ingestion and ETL with just configuration files.\\
 \sectionsep
   
 
@@ -120,6 +129,5 @@ A simple Feature-Store which allows schema evolution. Uses S3 for storage, Glue 
 \descript{| Scala, JavaScript}\hfill \location{github.com/saswata-dutta/eval-exp}\\
 A generic expression parser and evaluator with support for variables and allowing extensions to operations. Input DSL can be json or lisp.\\
 \sectionsep
-
-\ 
+% \ 
 \end{document}
