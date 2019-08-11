@@ -40,7 +40,7 @@
         "Rule based Incentive engine to distribute coupons to users in realtime. Rules for eligibility, and triggering of benefits were embedded in the coupon DSL which could be input by business analysts. ",
         "KYC service by performing penny drop on beneficiary account to verify name and account details.",
         "Implemented framework for integration and stress testing of entire payment/commerce ecosystem.",
-        "Implemented queryable application log repository in Aws Glue/Athena, for ELK cost savings."
+        "Implemented queryable application log repository in AWS Glue/Athena, for ELK cost savings."
       ],
       "company": "Rivigo Services Pvt. Ltd.",
       "position": "Lead Engineer",
@@ -54,8 +54,8 @@
       "endDate": "2018",
       "highlights": [
         "Feature development and performance optimisation in multiple releases of AEM Forms. (Scala, C++, Java, JavaScript, Python, Apache Sling/OSGI)",
-        "Automatic Paper Form Capture:  Lead project from inception. Created pipelines for gathering datasets, defined protocol for communication between different knowledge sources, heuristically extract structure and semantics from “ﬂat documents”, created framework for measuring KPIs, implemented the merge and presentations engine which generated the final “Adaptive Form”.",
-        "HTML5 and Adaptive forms:   Optimised browser footprint to allow large forms to be efficiently loaded.  Built a framework for auto importing xfa-pdf controls as html widgets. Worked on layout and formatting of elements in both html and pdf rendition. Worked on backend management, formatting and validation of user data, and generation of xml/json output for persistent storage."
+        "Automatic Paper Form Capture: Lead project from inception. Created pipelines for gathering datasets, defined protocol for communication between different knowledge sources, heuristically extract structure and semantics from “ﬂat documents”, created framework for measuring KPIs, implemented the merge and presentations engine which generated the final “Adaptive Form”.",
+        "HTML5 and Adaptive forms: Optimised browser footprint to allow large forms to be efficiently loaded.  Built a framework for auto importing xfa-pdf controls as html widgets. Worked on layout and formatting of elements in both html and pdf rendition. Worked on backend management, formatting and validation of user data, and generation of xml/json output for persistent storage."
       ],
       "company": "Adobe India Pvt. Ltd.",
       "location": "Noida/Bangaluru",
@@ -74,7 +74,7 @@
   "projects": [
     {
       "name": "Spark-Seed",
-      "description": "Spark based framework to ingest data from any source, and flush to any sink. Aim of project is to allow easy configuration of simple ingestion and ETL with just “conf” files.",
+      "description": "Spark based framework to ingest data from any source, and flush to any sink. Motivation was to allow easy configuration of simple ingestion and ETL with just configuration files.",
       "url": "github.com/saswata-dutta/spark-seed",
       "keywords": [
         "Scala",
