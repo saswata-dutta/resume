@@ -30,9 +30,7 @@
   "work": [
     {
       "highlights": [
-        "Created platform for ingesting/querying relevant data in/out of our Data Lake. (Scala, Spark, Airflow, Python, Pandas, PySpark, AWS : Lambda, S3, Glue, Athena)",
-        "Implemented “Vaayu”, a Spark based framework to process and store data from various sources.",
-        "Implemented “Tejas”, a serverless feature store for sharing and reuse of features needed by ML models.",
+        "Created platform for ingesting/querying relevant data in/out of our Data Lake. Added a Feature Store to version and share data for ML models. (Scala, Spark, Airflow, Python, Pandas, PySpark, AWS : Lambda, S3, Glue, Athena)",
         "Refactored “Payments/Commerce” services into separate micro-services corresponding to Payments (pay-in, pay-out), Wallet, Incentives, Fuel, and Fastag. (Java, Scala, Spring, Hibernate, MySql).",
         "Implemented realtime pay-out to suppliers via IMPS/NEFT from company accounts in ICICI, Yes bank and Axis Bank. Automated retries and refunds. Bank and payment mode selection based on the transaction details and recent success rate of the bank. Float maintenance within the company accounts.",
         "Wallet for demand and supply users which reflected the payments and incentives in realtime. This was linked with other services like bank accounts, Fuel vouchers and Fastag topups.",
@@ -87,8 +85,8 @@
         "PySpark",
         "Pandas"
       ],
-      "name": "aws-feature-store",
-      "url": "github.com/saswata-dutta/aws-feature-store",
+      "name": "feature-store",
+      "url": "github.com/saswata-dutta/feature-store",
       "description": "A simple Feature-Store which allows schema evolution. Uses S3 for storage, Glue for data catalog, and Athena as SQL engine. Motivation was the lack of cost effective tooling for small to medium scale data processing."
     },
     {
