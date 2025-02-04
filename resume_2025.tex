@@ -1,0 +1,248 @@
+\documentclass[a4paper,11pt]{article}
+% -----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.70in, left=0.4in, right=0.93in]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{wasysym}
+\usepackage[misc]{ifsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\raggedbottom
+\usepackage{tikz}
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.45cm}
+\newcommand{\psep}{-0.6cm}
+
+\pagestyle{empty}
+% -----------------------------------------------------------
+% Custom commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\resitem}[1]{\item #1}
+
+\newcommand{\resheading}[1]{
+  \hspace{-6pt}
+  \begin{minipage}{\textwidth+2pt}
+    \textbf{\textsc{\large #1}}
+    \vspace{4pt}
+    \hrule
+  \end{minipage}
+}
+
+\newcommand{\resSubHeading}[2]{
+  \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    \textbf{#1} & \textit{#2}\\
+  \end{tabular*}
+}
+
+\newcommand{\taHeading}[2]{
+  \begin{tabular*}{\textwidth}{ll @{\extracolsep{\fill}} r}
+    \hspace{10pt} & \textbf{#1} & \textit{#2}\\
+  \end{tabular*}
+}
+
+\newcommand{\resDeepSubHeading}[4]{
+  \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    \textbf{#1} & \textit{#2} \\
+    \textit{#3} & \textit{#4}
+  \end{tabular*}
+}
+
+\newcommand{\resEduHeading}[5]{
+  \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    \textbf{\large #1} \\
+    \textit{#2} & \textit{#3} \\
+    {\large #4} & \textit{CGPA: \textbf{#5}}
+  \end{tabular*}
+}
+
+\newcommand{\resCompany}[1]{
+    \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    \large \textbf{#1}
+  \end{tabular*}
+}
+
+\newcommand{\resPosition}[2]{
+    \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+        \textit{#1} & \textit{#2}
+    \end{tabular*}
+}
+
+\def\Plus{\texttt{+}}
+
+
+% -----------------------------------------------------------
+\begin{document}
+\begin{center}
+  {\Huge Saswata Dutta}\\
+  \href{mailto:saswat.dutta@gmail.com}{\faEnvelope \texttt{ saswat.dutta@gmail.com}}\hspace{1em}
+  \href{https://www.linkedin.com/in/saswata-dutta/}{\faLinkedinSquare \texttt{ saswata-dutta}}\hspace{1em}
+  {\faPhone \texttt{ +91-8178349520}}\hspace{1em}
+\end{center}
+
+\vspace{-8pt}
+\noindent\makebox[\linewidth]{\rule{\paperwidth+10em}{0.8pt}}\\
+
+%%%%%%%%%%%%%%%%%%%
+
+    \indent \resheading{Skills}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt]
+        \setlength{\itemsep}{-3pt}
+        \resitem {Large Scale Data Intensive Applications, Big Data, Database Scaling}
+        \resitem {Machine Learning, Machine Learning Platform, MLOps}
+        \resitem {NLP, Generative AI, LLM, RAG, LLMOps, Chatbots}
+        \resitem {AWS, GCP, Azure}
+        \resitem{Leading technical charter for teams with 30+ engineers.}
+    \end{itemize}
+    
+%%%%%%%%%%%%%%%%%%%
+    \indent \resheading{Experience}
+
+    
+    \indent \resCompany{Coinbase}
+        \indent \resPosition{Staff Software Engineer}{Oct 2023 - Present}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \resitem{Built a \textbf{scalable, multi-cloud LLM platform} , enabling multiple high-volume use cases, optimized for token efficiency, and supporting large-scale semantic and full-text search across knowledge bases, resulting in \textbf{\$60M} in cost savings. The system elastically scaled and handled multiple bullruns, with peak consumption of \textbf{100M} tokens per minute}
+
+            \resitem{Leveraged LLMs to enhance customer support; achieved a \textbf{65\%} automated resolutions, expanded coverage to \textbf{18} new countries. Optimized costs to only \textbf{\$2K} per month through semantic caching, enabling the solution to gracefully handle traffic spikes of up to \textbf{10x}.}
+            
+            \resitem{Developed cheap, customizable and compliance focussed guardrails, evaluation frameworks, and audit trail for critical business processes in Finance and Legal operations.}  
+        
+            \resitem{Led various LLM-powered initiatives to enhance employee productivity, including coding assistants, on-call operations, Slack helpers, and various Legal and Finance business process automations.}
+
+            \resitem{Leveraging LLM-as-a-Judge for automated and scalable evaluations and auto tuning prompts.}
+
+            \resitem{Developed plugins for seamless integration of in-house LLM endpoints across popular agent frameworks (LangGraph, LangFlow, CrewAI, Legion AI, Bedrock Agents), enhancing developer workflow.}
+        
+            \resitem{\textbf{Technologies:} \textit{LLMs: AWS Bedrock, GCP Vertex AI, Azure OpenAI, Anthropic, Huggingface, RAG, CAG, LangChain, LangGraph, DeepEval, VectorStore, MongoDB, AWS Aurora, Opensearch.}}
+            
+        \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+
+    \indent \resCompany{Amazon}
+        \indent \resPosition{Staff Software Engineer}{Mar 2020 - Oct 2023}
+        \indent \textit{AWS EMR}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            
+            \resitem{Optimized AWS EMR Spark performance via improved query planning, S3 interactions, and JVM memory optimizations, achieving significant performance gains in TPC-DS.}
+            
+            \resitem{Enhanced performance via prefetch and dynamic partition pruning, optimal join strategies.}
+
+            \resitem{\textbf{Technologies:} \textit{AWS EMR, Apache Spark, Trino, S3, DynamoDb, JVM}}
+            
+        \end{itemize}
+
+        \indent \textit{Amazon Business Automation}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            
+            \resitem{Modernized Amazon's fraud and anomaly detection framework at a global scale by integrating real-time streaming to GNNs, reducing detection/mitigation times from weeks to one day.}
+            
+            \resitem{Architected a global scale serverless Data Lake for interactive analytics and machine learning training, resulting in a 3x improvement in operational metrics and a 10x reduction in costs.}
+            
+            \resitem{Built large-scale knowledge graphs with \textbf{50B} vertices to power GNN models. Efficiently caching subgraphs to reduce feature store costs by \textbf{\$500k annually}.}
+
+            \resitem{Revamped the account management ecosystem by optimizing billing and metering pipelines, reducing turnaround time by \textbf{70\%}. Enhanced rule engines to improve performance and cut costs by \textbf{65\%}.}
+
+            \resitem{\textbf{Technologies:} \textit{AWS (Neptune, Textract, Comprehend, RDS Postgres, EMR, Athena, Lambda, SQS, SNS, DynamoDB, Redshift, OpenSearch, SageMaker), 
+            Apache Iceberg, DistDGL, Apache Spark}}
+            
+        \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+\pagebreak
+%%%%%%%%%%%%%%%%%%%
+    \indent \resCompany{Domino Data Lab}
+        \indent \resPosition{Staff Software Engineer}{Nov 2019 - Mar 2020}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            
+            \resitem{Optimized real-time feature store's operational costs by 45\%.}
+            \resitem{Designed consumer facing REST APIs for MLOps control plane.}
+            \resitem{Designed an infrastructure-as-code template for high-volume data ingestion, enabling easy and repeatable deployments across tenant accounts.}
+
+            \resitem{\textbf{Technologies:} \textit{Scala, Play, Python, MongoDB, AWS (Sagemaker, EMR, S3, Kinesis, Lambda, EKS)}}
+            
+        \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+    \indent \resCompany{Rivigo}
+        \indent \resPosition{Staff Software Engineer}{Jul 2018 - Nov 2019}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            
+            \resitem{Architected a scalable data ingestion platform, enabling a centralized Data Lake to streamlined analytics and ML workflows.}
+            
+            \resitem{Developed cost effective serverless feature store, that accelerated ML model training and inference by standardizing features across teams.}
+            
+            \resitem{Reduced AWS infrastructure costs by \textbf{40\%} through optimization of service flows, transitioning from real-time to batch processing, and implementing efficient DB schemas and access patterns.}
+            
+            \resitem{Engineered a predictive maintenance system for truck fleet management, using sensor data feeds, enabling tracking and proactive vehicle maintenance to reduce downtime.}
+            
+            \resitem{Designed a flexible mapping framework supporting multiple vendors (Google Maps, Bing Maps, Map My India), optimizing route calculations and reducing operational costs by \textbf{30\%}.}
+            
+            \resitem{Led the transformation of a monolithic Commerce service into specialized microservices (Order, Payments, Wallet, Incentives, Fuel, Fastag, Billing).}
+            
+            \resitem{Implemented real-time payout system with automated retries and intelligent bank selection, alongside a comprehensive wallet system integrated with bank accounts, fuel vouchers, and Fastag top-ups.}
+            
+            \resitem{Developed a easy to customise, DSL-powered incentive engine enabling business analysts to define and trigger real-time coupon distribution, enhancing user engagement and operational efficiency.}
+
+            \resitem{\textbf{Technologies:} \textit{Java, Scala, Python, Go, AWS (RDS, EMR, Glue, S3, ECS, Lambda, SNS, SQS), MongoDb, Postgres}}
+            
+        \end{itemize}
+        
+%%%%%%%%%%%%%%%%%%%
+
+    \indent \resCompany{Adobe}
+        \indent \resPosition{Computer Scientist 2}{Jul 2013 - Jul 2018}
+        \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            
+            \resitem{Led development of ML-based document digitization pipeline for Adobe Sense-AI cloud offerings, successfully implementing feature extraction and HTML transformation frameworks that enhanced document accessibility on mobile devices, culminating in an \textbf{US patent (US20190163733A1)} for conversion quality evaluation.}
+            
+            \resitem{Engineered critical performance optimizations in AEM Forms, implementing selective HTML loading and enhanced XFA PDF rendering engines, while developing comprehensive form control systems for both frontend and backend data manipulation.}
+            
+            \resitem{Developed multiple PDF and XFA-Form authoring and management features for the Adobe Document Cloud.}
+            
+            \resitem{\textbf{Technologies:} \textit{AEM, XFA PDF, Adobe Sense-AI, Scala, Java, Python, C++, Apache Spark, RNN}}
+            
+        \end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%
+
+    \indent \resheading{Patent}
+    \begin{itemize}[leftmargin=30pt, rightmargin=-16pt]
+        \resitem {\href{https://patents.google.com/patent/US10621279}{{Conversion quality evaluation for digitized forms.}}, US10621279B2, filed under Adobe.}
+    \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%
+
+    \indent \resheading{Education}
+    \indent \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+        \textbf{\large Indian Institute of Technology, Guwahati} & \textit{2013} \\
+        \textit{Computer Science and Engineering} & \textit{CGPA: \textbf{8.92}}
+    \end{tabular*}
+    \begin{itemize}[leftmargin=30pt, rightmargin=-16pt, itemsep=-2pt]
+            \setlength{\itemsep}{-3pt}
+            \resitem{Project: Massively Parallel Computation of Visibility Graphs of Simple Polygonal Obstacles and Calculation of shortest paths through them.}
+            \resitem{\textbf{Technologies:} \textit{GPGPU, C++, CGAL, CUDA, OpenCL}}
+.   \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+
+\end{document}
